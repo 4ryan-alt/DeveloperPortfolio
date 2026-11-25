@@ -1,0 +1,11 @@
+$ gcc hello.c -o hello
+$ ./hello
+Hello, World!
+$ ls -l hello hello.c
+-rwxrwx--- 1 root nogroup 15960 Nov 25 09:51 hello
+-rw-rw---- 1 root nogroup    79 Nov 25 09:51 hello.c
+$ python3 hello.py
+Hello, World!
+$ python3 --version; gcc --version | head -1
+Python 3.12.3
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0

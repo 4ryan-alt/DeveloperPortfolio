@@ -1,0 +1,16 @@
+$ gcc broken.c -o broken
+broken.c: In function 'main':
+broken.c:3:30: error: expected ';' before 'return'
+    3 |     printf("Hello, World!\n")
+      |                              ^
+      |                              ;
+    4 |     return 0;
+      |     ~~~~~~                    
+exit code: 1
+
+$ python3 broken.py
+  File "/home/hatch/cse103_lab/LAB1/q16/broken.py", line 2
+    print("Missing quote)
+          ^
+SyntaxError: unterminated string literal (detected at line 2)
+exit code: 1
